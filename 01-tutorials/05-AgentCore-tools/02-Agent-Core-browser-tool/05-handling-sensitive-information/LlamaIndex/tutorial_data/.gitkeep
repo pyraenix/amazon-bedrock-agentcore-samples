@@ -1,0 +1,11 @@
+# Tutorial Data Directory
+
+This directory will contain sample data, test files, and configuration examples used throughout the tutorial notebooks.
+
+## Planned Contents
+
+- Sample sensitive documents for testing
+- Test web forms and data
+- Configuration templates
+- Mock data for development and testing
+- Validation datasets

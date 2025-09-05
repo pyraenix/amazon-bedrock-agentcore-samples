@@ -1,0 +1,104 @@
+# LlamaIndex with AgentCore Browser Tool - Sensitive Information Handling Tutorial
+# Core Dependencies
+
+# LlamaIndex Framework and Extensions (Python 3.12 Compatible)
+llama-index>=0.10.68
+llama-index-core>=0.10.68
+llama-index-embeddings-bedrock>=0.1.7
+llama-index-llms-bedrock>=0.1.11
+llama-index-vector-stores-chroma>=0.1.7
+llama-index-readers-web>=0.1.6
+llama-index-agent-openai>=0.2.4
+
+# Amazon Bedrock AgentCore Browser Client SDK
+bedrock-agentcore-browser-client==1.0.0
+
+# AWS SDK and Services
+boto3==1.34.34
+botocore==1.34.34
+aws-cli==1.32.27
+
+# Web Automation and Browser Support
+selenium==4.17.2
+beautifulsoup4==4.12.3
+requests==2.31.0
+urllib3==2.1.0
+
+# Data Processing and Security
+pandas==2.2.0
+numpy==1.26.3
+cryptography==42.0.2
+pycryptodome==3.19.1
+
+# Vector Database and Embeddings
+chromadb==0.4.22
+sentence-transformers==2.3.1
+transformers==4.37.2
+
+# Environment and Configuration Management
+python-dotenv==1.0.1
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+# Jupyter and Development Tools
+jupyter==1.0.0
+jupyterlab==4.0.10
+ipywidgets==8.1.1
+notebook==7.0.6
+nbformat==5.9.2
+
+# Logging and Monitoring
+structlog==23.2.0
+python-json-logger==2.0.7
+prometheus-client==0.19.0
+
+# Testing and Validation
+pytest==8.0.0
+pytest-asyncio==0.23.4
+pytest-mock==3.12.0
+moto==4.2.14
+
+# Data Validation and Schema
+marshmallow==3.20.2
+jsonschema==4.21.1
+
+# HTTP and API Clients
+httpx==0.26.0
+aiohttp==3.9.1
+
+# Text Processing and NLP
+spacy==3.7.2
+nltk==3.8.1
+regex==2023.12.25
+
+# Image Processing (for screenshot handling)
+Pillow==10.2.0
+opencv-python==4.9.0.80
+
+# Async Support
+asyncio==3.4.3
+aiofiles==23.2.1
+
+# Development and Code Quality
+black==24.1.1
+flake8==7.0.0
+mypy==1.8.0
+pre-commit==3.6.0
+
+# Documentation
+sphinx==7.2.6
+sphinx-rtd-theme==2.0.0
+
+# Performance and Caching
+redis==5.0.1
+diskcache==5.6.3
+
+# Date and Time Utilities
+python-dateutil==2.8.2
+pytz==2023.4
+
+# UUID and Unique Identifiers
+uuid==1.30
+
+# File and Path Utilities
+pathlib2==2.3.7

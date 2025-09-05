@@ -1,0 +1,14 @@
+# Tutorial Data Directory
+
+This directory contains sample data and test files for the browser-use with AgentCore Browser Tool tutorial.
+
+## Contents
+
+- Mock sensitive data for testing (non-functional)
+- Sample forms and documents
+- Test credentials (synthetic only)
+- Compliance validation datasets
+
+## Security Note
+
+All data in this directory is synthetic and created specifically for tutorial purposes. No real sensitive information should ever be stored here.

@@ -1,0 +1,156 @@
+# LlamaIndex-AgentCore Browser Tool Tutorial - Git Ignore
+
+# Environment and Configuration Files
+.env
+.env.local
+.env.production
+.env.staging
+config.json
+secrets.json
+
+# AWS Credentials and Configuration
+.aws/
+aws-credentials.json
+credentials.json
+
+# Log Files
+logs/*.log
+*.log
+audit.log
+validation.log
+browser_sessions.log
+
+# Python Cache and Virtual Environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Vector Store and Database Files
+vector_store/
+*.db
+*.sqlite
+*.sqlite3
+chroma_db/
+
+# Temporary and Cache Files
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Sensitive Data and Test Files
+sensitive_data/
+test_credentials/
+mock_data/
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Browser Session Data
+browser_sessions/
+screenshots/
+session_data/
+cookies/
+
+# Validation and Report Files
+validation_report.json
+validation_report.html
+test_results/
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Encryption Keys and Certificates
+*.pem
+*.key
+*.crt
+*.cer
+*.p7b
+*.p7c
+*.p12
+*.pfx
+*.jks
+keystore.*
+
+# Backup Files
+*.bak
+*.backup
+*.old
+*~
+
+# Documentation Build Files
+docs/_build/
+docs/build/
+site/
+
+# Package Files
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# Local Configuration Overrides
+local_config.py
+local_settings.py
+override_config.json

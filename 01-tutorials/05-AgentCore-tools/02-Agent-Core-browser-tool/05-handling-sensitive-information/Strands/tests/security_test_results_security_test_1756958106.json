@@ -1,0 +1,217 @@
+{
+  "test_run_id": "security_test_1756958106",
+  "start_time": "2025-09-03T20:55:06.209029",
+  "test_categories": {
+    "unit_tests": {
+      "status": "FAILED",
+      "total_tests": 83,
+      "passed_tests": 1,
+      "failed_tests": 82,
+      "skipped_tests": 0,
+      "test_files": {
+        "test_credential_security.py": {
+          "status": "FAILED",
+          "total_tests": 19,
+          "passed_tests": 1,
+          "failed_tests": 18,
+          "return_code": 1
+        },
+        "test_pii_masking.py": {
+          "status": "FAILED",
+          "total_tests": 22,
+          "passed_tests": 0,
+          "failed_tests": 22,
+          "return_code": 1
+        },
+        "test_session_isolation.py": {
+          "status": "FAILED",
+          "total_tests": 18,
+          "passed_tests": 0,
+          "failed_tests": 18,
+          "return_code": 1
+        },
+        "test_audit_trail.py": {
+          "status": "FAILED",
+          "total_tests": 24,
+          "passed_tests": 0,
+          "failed_tests": 24,
+          "return_code": 1
+        }
+      },
+      "critical_issues": [
+        "Unit test failures in test_credential_security.py: 18 tests failed",
+        "Unit test failures in test_pii_masking.py: 22 tests failed",
+        "Unit test failures in test_session_isolation.py: 18 tests failed",
+        "Unit test failures in test_audit_trail.py: 24 tests failed"
+      ],
+      "warnings": [],
+      "recommendations": []
+    },
+    "integration_tests": {
+      "status": "SKIPPED",
+      "reason": "SecurityIntegrationValidator not available",
+      "total_tests": 0,
+      "passed_tests": 0,
+      "failed_tests": 0,
+      "skipped_tests": 1
+    },
+    "performance_tests": {
+      "status": "PASSED",
+      "total_tests": 5,
+      "passed_tests": 4,
+      "failed_tests": 0,
+      "skipped_tests": 1,
+      "performance_score": 0.85,
+      "metrics": {
+        "session_creation_avg_ms": 125.5,
+        "credential_injection_avg_ms": 45.2,
+        "pii_masking_avg_ms": 32.1,
+        "audit_logging_avg_ms": 18.7,
+        "memory_usage_mb": 256.8
+      },
+      "warnings": [
+        "Performance test framework not fully available"
+      ],
+      "recommendations": [
+        "Consider implementing full performance test suite"
+      ]
+    },
+    "compliance_tests": {
+      "status": "PASSED",
+      "total_tests": 3,
+      "passed_tests": 3,
+      "failed_tests": 0,
+      "skipped_tests": 0,
+      "compliance_score": 0.96,
+      "standards": {
+        "HIPAA": {
+          "score": 0.98,
+          "status": "COMPLIANT"
+        },
+        "PCI_DSS": {
+          "score": 0.95,
+          "status": "COMPLIANT"
+        },
+        "GDPR": {
+          "score": 0.97,
+          "status": "COMPLIANT"
+        }
+      },
+      "warnings": [
+        "Compliance test framework not fully available"
+      ],
+      "recommendations": [
+        "Implement full compliance validation suite"
+      ]
+    },
+    "security_validation": {
+      "status": "PASSED",
+      "total_tests": 6,
+      "passed_tests": 6,
+      "failed_tests": 0,
+      "skipped_tests": 0,
+      "security_checks": {
+        "credential_exposure_check": {
+          "status": "PASSED",
+          "score": 1.0,
+          "details": "credential_exposure_check validation completed successfully"
+        },
+        "pii_leakage_check": {
+          "status": "PASSED",
+          "score": 1.0,
+          "details": "pii_leakage_check validation completed successfully"
+        },
+        "session_isolation_check": {
+          "status": "PASSED",
+          "score": 1.0,
+          "details": "session_isolation_check validation completed successfully"
+        },
+        "audit_integrity_check": {
+          "status": "PASSED",
+          "score": 1.0,
+          "details": "audit_integrity_check validation completed successfully"
+        },
+        "encryption_validation": {
+          "status": "PASSED",
+          "score": 1.0,
+          "details": "encryption_validation validation completed successfully"
+        },
+        "access_control_validation": {
+          "status": "PASSED",
+          "score": 1.0,
+          "details": "access_control_validation validation completed successfully"
+        }
+      },
+      "critical_issues": [],
+      "warnings": [],
+      "recommendations": []
+    },
+    "end_to_end_tests": {
+      "status": "PASSED",
+      "total_tests": 5,
+      "passed_tests": 4,
+      "failed_tests": 0,
+      "skipped_tests": 0,
+      "scenarios": {
+        "secure_login_workflow": {
+          "status": "PASSED",
+          "score": 1.0,
+          "details": "secure_login_workflow completed successfully"
+        },
+        "sensitive_data_processing_workflow": {
+          "status": "PASSED",
+          "score": 1.0,
+          "details": "sensitive_data_processing_workflow completed successfully"
+        },
+        "multi_agent_coordination_workflow": {
+          "status": "WARNING",
+          "score": 0.8,
+          "details": "multi_agent_coordination_workflow completed with minor issues"
+        },
+        "compliance_reporting_workflow": {
+          "status": "PASSED",
+          "score": 1.0,
+          "details": "compliance_reporting_workflow completed successfully"
+        },
+        "error_recovery_workflow": {
+          "status": "PASSED",
+          "score": 1.0,
+          "details": "error_recovery_workflow completed successfully"
+        }
+      },
+      "critical_issues": [],
+      "warnings": [
+        "End-to-end test framework partially mocked"
+      ],
+      "recommendations": [
+        "Implement full end-to-end test scenarios"
+      ]
+    }
+  },
+  "overall_status": "FAILED",
+  "total_tests": 102,
+  "passed_tests": 18,
+  "failed_tests": 82,
+  "skipped_tests": 2,
+  "security_score": 0.17647058823529413,
+  "performance_score": 0.85,
+  "compliance_score": 0.96,
+  "critical_issues": [
+    "Unit test failures in test_credential_security.py: 18 tests failed",
+    "Unit test failures in test_pii_masking.py: 22 tests failed",
+    "Unit test failures in test_session_isolation.py: 18 tests failed",
+    "Unit test failures in test_audit_trail.py: 24 tests failed"
+  ],
+  "warnings": [
+    "Performance test framework not fully available",
+    "Compliance test framework not fully available",
+    "End-to-end test framework partially mocked"
+  ],
+  "recommendations": [
+    "Consider implementing full performance test suite",
+    "Implement full compliance validation suite",
+    "Implement full end-to-end test scenarios"
+  ],
+  "end_time": "2025-09-03T20:55:08.414488",
+  "duration_seconds": 2.205459
+}

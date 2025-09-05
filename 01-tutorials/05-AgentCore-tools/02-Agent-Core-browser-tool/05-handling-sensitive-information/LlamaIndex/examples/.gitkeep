@@ -1,0 +1,11 @@
+# Examples Directory
+
+This directory will contain supporting example scripts and utilities for the LlamaIndex-AgentCore Browser Tool integration tutorial.
+
+## Planned Contents
+
+- `agentcore_session_helpers.py` - Helper functions for managing browser sessions
+- `llamaindex_pii_utils.py` - Utilities for PII detection and masking
+- `secure_web_rag.py` - Production RAG patterns with AgentCore
+- `llamaindex_monitoring.py` - Observability and monitoring utilities
+- Real-world integration examples (healthcare, financial, legal, etc.)

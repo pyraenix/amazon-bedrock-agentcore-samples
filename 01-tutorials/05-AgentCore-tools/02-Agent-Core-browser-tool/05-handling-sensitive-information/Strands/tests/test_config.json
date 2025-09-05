@@ -1,0 +1,104 @@
+{
+  "integration": {
+    "validation_level": "COMPREHENSIVE",
+    "security_standards": ["HIPAA", "PCI_DSS", "GDPR", "SOX"],
+    "test_timeout_seconds": 300,
+    "concurrent_sessions": 5,
+    "test_data_sets": {
+      "pii_samples": [
+        "Patient John Smith (SSN: 123-45-6789) has credit card 4532-1234-5678-9012",
+        "Contact Dr. Jane Doe at jane.doe@hospital.com or (555) 123-4567",
+        "Account holder: Alice Johnson, DOB: 1985-03-15, Address: 123 Main St"
+      ],
+      "credential_samples": {
+        "basic": {
+          "username": "test_user",
+          "password": "test_password_123"
+        },
+        "extended": {
+          "username": "admin_user",
+          "password": "admin_password_456",
+          "api_key": "sk-test1234567890abcdef",
+          "oauth_token": "oauth_token_xyz789"
+        }
+      }
+    }
+  },
+  "performance": {
+    "thresholds": {
+      "session_creation_ms": 200,
+      "credential_injection_ms": 100,
+      "pii_masking_ms": 75,
+      "audit_logging_ms": 50,
+      "memory_usage_mb": 512,
+      "concurrent_degradation_factor": 2.0
+    },
+    "load_testing": {
+      "max_concurrent_operations": 20,
+      "test_duration_seconds": 60,
+      "ramp_up_seconds": 10
+    },
+    "scalability_testing": {
+      "load_levels": [1, 5, 10, 20, 50],
+      "acceptable_degradation_factor": 2.0
+    }
+  },
+  "compliance": {
+    "standards": ["HIPAA", "PCI_DSS", "GDPR", "SOX"],
+    "validation_level": "STRICT",
+    "industry_scenarios": ["healthcare", "financial_services", "e_commerce", "government"],
+    "audit_requirements": {
+      "retention_days": 2555,
+      "encryption_required": true,
+      "integrity_protection": true,
+      "real_time_monitoring": true
+    },
+    "data_protection_requirements": {
+      "encryption_at_rest": true,
+      "encryption_in_transit": true,
+      "key_management": true,
+      "access_controls": true
+    }
+  },
+  "security": {
+    "credential_security": {
+      "masking_required": true,
+      "rotation_testing": true,
+      "exposure_detection": true,
+      "secure_storage": true
+    },
+    "pii_protection": {
+      "detection_accuracy_threshold": 0.95,
+      "masking_formats": ["partial", "full", "tokenization"],
+      "classification_levels": ["LOW", "MEDIUM", "HIGH", "CRITICAL"],
+      "real_time_processing": true
+    },
+    "session_isolation": {
+      "strict_isolation": true,
+      "memory_isolation": true,
+      "network_isolation": true,
+      "data_segregation": true
+    },
+    "audit_trail": {
+      "comprehensive_logging": true,
+      "integrity_protection": true,
+      "real_time_monitoring": true,
+      "compliance_reporting": true
+    }
+  },
+  "test_execution": {
+    "parallel_execution": true,
+    "retry_failed_tests": true,
+    "max_retries": 3,
+    "generate_reports": true,
+    "save_evidence": true,
+    "cleanup_after_tests": true
+  },
+  "reporting": {
+    "formats": ["json", "markdown", "html"],
+    "include_evidence": true,
+    "include_recommendations": true,
+    "compliance_summary": true,
+    "performance_charts": false
+  }
+}

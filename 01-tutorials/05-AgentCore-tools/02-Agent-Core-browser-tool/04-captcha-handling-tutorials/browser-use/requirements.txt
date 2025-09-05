@@ -1,0 +1,67 @@
+# Browser-use + AgentCore Browser Tool Integration - Production Requirements
+# Updated: 2025-01-29
+
+# ===== PYTHON VERSION REQUIREMENT =====
+# Requires Python 3.11 or higher (required by browser-use)
+
+# ===== CORE INTEGRATION COMPONENTS =====
+# AWS Bedrock AgentCore Browser Tool SDK
+bedrock-agentcore>=0.1.2
+
+# Browser-use Framework for CAPTCHA Detection
+browser-use>=0.1.0
+
+# Browser Automation Framework (used by both)
+playwright>=1.40.0
+
+# ===== AWS SERVICES =====
+# AWS SDK for Bedrock and other services
+boto3>=1.40.0
+botocore>=1.40.0
+
+# ===== IMAGE PROCESSING =====
+# Required for screenshot capture and CAPTCHA image analysis
+pillow>=10.0.0
+
+# Web scraping and HTML parsing
+beautifulsoup4>=4.12.0
+
+# ===== JUPYTER ENVIRONMENT =====
+# Required for running the tutorial notebook
+jupyter>=1.0.0
+ipykernel>=6.25.0
+nbformat>=5.9.0
+
+# ===== SYSTEM MONITORING =====
+# Required for performance benchmarking and resource monitoring
+psutil>=5.9.0
+
+# ===== TESTING FRAMEWORK =====
+# Required for comprehensive test suite
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# ===== USER INTERFACE =====
+# Rich console output for better user experience
+rich>=13.0.0
+
+# ===== ENVIRONMENT MANAGEMENT =====
+# Environment variable management
+python-dotenv>=1.0.0
+
+# ===== OPTIONAL: INTERACTIVE VIEWER =====
+# Uncomment for live browser view capabilities
+# fastapi>=0.100.0
+# uvicorn>=0.23.0
+# websockets>=11.0.0
+
+# ===== OPTIONAL: AI INTEGRATION =====
+# Uncomment for advanced AI analysis capabilities
+# langchain-aws>=0.2.0
+# langgraph>=0.6.0
+
+# ===== DEVELOPMENT DEPENDENCIES (Optional) =====
+# Uncomment for development work
+# black>=23.0.0
+# flake8>=6.0.0
+# mypy>=1.7.0

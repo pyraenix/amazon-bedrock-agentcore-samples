@@ -1,0 +1,119 @@
+# Strands with AgentCore Browser Tool - Sensitive Information Handling Tutorial
+# Core Dependencies for Python 3.12
+
+# Strands Agents Framework (Python 3.12 Compatible)
+strands-agents>=0.2.0
+strands-core>=0.2.0
+strands-tools>=0.2.0
+
+# Amazon Bedrock AgentCore Browser Client SDK
+bedrock-agentcore-browser-client==1.0.0
+
+# AWS SDK and Bedrock Services
+boto3==1.34.34
+botocore==1.34.34
+aws-cli==1.32.27
+
+# Amazon Bedrock Model Support
+anthropic==0.18.1
+langchain-aws==0.1.6
+langchain-community==0.0.38
+
+# Web Automation and Browser Support
+selenium==4.17.2
+beautifulsoup4==4.12.3
+requests==2.31.0
+urllib3==2.1.0
+playwright==1.41.2
+
+# Data Processing and Security
+pandas==2.2.0
+numpy==1.26.3
+cryptography==42.0.2
+pycryptodome==3.19.1
+
+# Environment and Configuration Management
+python-dotenv==1.0.1
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+# Jupyter and Development Tools
+jupyter==1.0.0
+jupyterlab==4.0.10
+ipywidgets==8.1.1
+notebook==7.0.6
+nbformat==5.9.2
+nbconvert==7.16.1
+
+# Logging and Monitoring
+structlog==23.2.0
+python-json-logger==2.0.7
+prometheus-client==0.19.0
+
+# Testing and Validation
+pytest==8.0.0
+pytest-asyncio==0.23.4
+pytest-mock==3.12.0
+moto==4.2.14
+
+# Data Validation and Schema
+marshmallow==3.20.2
+jsonschema==4.21.1
+
+# HTTP and API Clients
+httpx==0.26.0
+aiohttp==3.9.1
+
+# Text Processing and NLP
+spacy==3.7.2
+nltk==3.8.1
+regex==2023.12.25
+
+# Image Processing (for screenshot handling)
+Pillow==10.2.0
+opencv-python==4.9.0.80
+
+# Async Support
+asyncio==3.4.3
+aiofiles==23.2.1
+
+# Development and Code Quality
+black==24.1.1
+flake8==7.0.0
+mypy==1.8.0
+pre-commit==3.6.0
+
+# Documentation
+sphinx==7.2.6
+sphinx-rtd-theme==2.0.0
+
+# Performance and Caching
+redis==5.0.1
+diskcache==5.6.3
+
+# Date and Time Utilities
+python-dateutil==2.8.2
+pytz==2023.4
+
+# UUID and Unique Identifiers
+uuid==1.30
+
+# File and Path Utilities
+pathlib2==2.3.7
+
+# Multi-LLM Provider Support for Strands
+openai==1.12.0
+anthropic==0.18.1
+ollama==0.1.7
+
+# Workflow and State Management
+fsm==0.3.1
+transitions==0.9.0
+
+# Custom Tool Development
+typing-extensions==4.9.0
+inspect2==0.1.2
+
+# Security and Compliance
+hashlib2==1.0.1
+secrets==1.0.0

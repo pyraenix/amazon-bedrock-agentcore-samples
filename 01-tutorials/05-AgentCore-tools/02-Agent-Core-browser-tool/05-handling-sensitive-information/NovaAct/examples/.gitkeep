@@ -1,0 +1,6 @@
+# Examples directory for NovaAct-AgentCore integration patterns
+# This directory will contain real-world integration examples:
+# - secure_login_with_novaact.py
+# - pii_form_automation.py  
+# - payment_form_security.py
+# - agentcore_session_helpers.py

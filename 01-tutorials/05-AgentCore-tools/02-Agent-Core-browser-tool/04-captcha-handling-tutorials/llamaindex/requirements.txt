@@ -1,0 +1,67 @@
+# LlamaIndex + AgentCore Browser Tool Integration Requirements
+
+# Core LlamaIndex framework
+llama-index>=0.10.0
+llama-index-core>=0.10.0
+
+# LlamaIndex Bedrock integration
+llama-index-llms-bedrock>=0.1.0
+llama-index-multi-modal-llms-bedrock>=0.1.0
+
+# AWS SDK
+boto3>=1.34.0
+botocore>=1.34.0
+
+# AWS CLI for AgentCore Browser Tool access (managed service)
+awscli>=1.32.0
+
+# Browser automation (required for AgentCore Browser Tool integration)
+playwright>=1.40.0
+
+# Image processing for CAPTCHA analysis
+Pillow>=10.0.0
+opencv-python>=4.8.0
+
+# System monitoring (for performance benchmarks)
+psutil>=5.9.0
+
+# Data validation and modeling
+pydantic>=2.0.0
+
+# Environment configuration
+python-dotenv>=1.0.0
+
+# Async support
+aiohttp>=3.8.0
+asyncio-throttle>=1.0.0
+
+# Testing framework
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+pytest-timeout>=2.1.0
+pytest-cov>=4.0.0
+
+# Development tools
+jupyter>=1.0.0
+notebook>=6.5.0
+ipykernel>=6.25.0
+
+# Logging and monitoring
+structlog>=23.0.0
+
+# Security and compliance
+cryptography>=41.0.0
+
+# Performance optimization
+cachetools>=5.3.0
+
+# Optional: Additional AI/ML libraries
+# numpy>=1.24.0
+# scikit-image>=0.21.0
+# torch>=2.0.0  # For custom CAPTCHA models
+
+# Installation Notes:
+# 1. Install Python dependencies: pip install -r requirements.txt
+# 2. Install Playwright browsers: playwright install chromium
+# 3. Copy .env.template to .env and configure your AWS credentials
+# 4. Alternative: Configure AWS credentials with: aws configure

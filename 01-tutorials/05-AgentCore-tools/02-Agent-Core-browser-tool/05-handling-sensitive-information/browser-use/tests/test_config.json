@@ -1,0 +1,87 @@
+{
+  "test_environment": {
+    "name": "browser-use-agentcore-sensitive-info-tests",
+    "version": "1.0.0",
+    "python_version": "3.12",
+    "test_timeout": 300
+  },
+  "agentcore_config": {
+    "region": "us-east-1",
+    "session_timeout": 300,
+    "enable_live_view": true,
+    "enable_session_replay": true,
+    "isolation_level": "micro-vm",
+    "compliance_mode": "enterprise"
+  },
+  "browser_use_config": {
+    "headless": true,
+    "timeout": 30000,
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "enable_screenshots": true,
+    "enable_video_recording": false
+  },
+  "security_test_config": {
+    "enable_pii_detection": true,
+    "enable_credential_protection": true,
+    "audit_level": "detailed",
+    "compliance_frameworks": ["HIPAA", "PCI-DSS", "GDPR"],
+    "security_boundaries": ["session_isolation", "data_masking", "credential_protection"]
+  },
+  "mock_data": {
+    "pii_samples": {
+      "ssn": ["123-45-6789", "987-65-4321"],
+      "email": ["test@example.com", "user@domain.org"],
+      "phone": ["(555) 123-4567", "+1-800-555-0199"],
+      "credit_card": ["4111-1111-1111-1111", "5555-5555-5555-4444"],
+      "names": ["John Doe", "Jane Smith", "Alice Johnson"]
+    },
+    "credentials": {
+      "usernames": ["testuser", "demouser", "sampleuser"],
+      "passwords": ["TestPass123!", "DemoPass456!", "SamplePass789!"]
+    },
+    "healthcare_data": {
+      "patient_ids": ["P123456", "P789012", "P345678"],
+      "medical_record_numbers": ["MRN001234", "MRN567890", "MRN234567"]
+    },
+    "financial_data": {
+      "account_numbers": ["ACC123456789", "ACC987654321", "ACC456789123"],
+      "routing_numbers": ["021000021", "011401533", "121000248"]
+    }
+  },
+  "performance_benchmarks": {
+    "session_creation_time": 5.0,
+    "pii_detection_time": 2.0,
+    "form_automation_time": 10.0,
+    "session_cleanup_time": 3.0,
+    "memory_usage_limit": 512
+  },
+  "compliance_validation": {
+    "hipaa": {
+      "required_features": ["data_encryption", "audit_trail", "access_controls"],
+      "validation_endpoints": ["healthcare_form", "patient_portal"]
+    },
+    "pci_dss": {
+      "required_features": ["card_data_masking", "secure_transmission", "audit_logging"],
+      "validation_endpoints": ["payment_form", "checkout_process"]
+    },
+    "gdpr": {
+      "required_features": ["data_minimization", "consent_management", "right_to_erasure"],
+      "validation_endpoints": ["user_registration", "data_collection_form"]
+    }
+  },
+  "test_urls": {
+    "mock_healthcare_form": "https://httpbin.org/forms/post",
+    "mock_financial_form": "https://httpbin.org/forms/post",
+    "mock_login_form": "https://httpbin.org/basic-auth/user/pass",
+    "mock_registration_form": "https://httpbin.org/forms/post"
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "json",
+    "enable_structured_logging": true,
+    "log_sensitive_data": false
+  }
+}

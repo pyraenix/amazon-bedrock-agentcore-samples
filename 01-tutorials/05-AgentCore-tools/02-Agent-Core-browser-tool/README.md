@@ -46,7 +46,26 @@ The Amazon Bedrock AgentCore Browser Tool is suitable for a wide range of applic
 
 In these tutorials we will cover the following functionality:
 
+### 🚀 Getting Started (Beginner Level)
 - [Getting Started with Bedrock AgentCore Browser Tool and NovaAct](01-browser-with-NovaAct/01_getting_started-agentcore-browser-tool-with-nova-act.ipynb)
-- [Amazon Bedrock AgentCore Browser Tool Live View and Nova Act](01-browser-with-NovaAct/02_agentcore-browser-tool-live-view-with-nova-act.ipynb)
 - [Getting Started with Bedrock AgentCore Browser Tool and Browser use](02-browser-with-browserUse/getting_started-agentcore-browser-tool-with-browser-use.ipynb)
+
+### 🔍 Advanced Features (Intermediate Level)
+- [Amazon Bedrock AgentCore Browser Tool Live View and Nova Act](01-browser-with-NovaAct/02_agentcore-browser-tool-live-view-with-nova-act.ipynb)
 - [Amazon Bedrock AgentCore Browser Tool Live View and Browser Use](02-browser-with-browserUse/agentcore-browser-tool-live-view-with-browser-use.ipynb)
+
+### 🤖 Specialized Applications (Advanced Level)
+- [Browser Tool with Strands Integration](03-browser-tool-with-strands/README.md)
+- [CAPTCHA Handling with Strands Agents](04-captcha-handling-tutorials/strands/README.md) - **FEATURED!** Enterprise-grade CAPTCHA handling with intelligent orchestration
+- [CAPTCHA Handling with Browser-use](04-captcha-handling-tutorials/browser-use/README.md) - AI-powered CAPTCHA detection and solving
+- [CAPTCHA Handling with LlamaIndex](04-captcha-handling-tutorials/llamaindex/README.md) - Comprehensive LlamaIndex integration for intelligent CAPTCHA handling
+
+### 📚 Recommended Learning Path
+
+**For Beginners**: Start with the "Getting Started" tutorials to understand basic browser automation concepts, then progress to advanced features.
+
+**For Intermediate Users**: If you're familiar with browser automation, jump to the "Advanced Features" section and explore live view capabilities.
+
+**For Advanced Users**: Focus on "Specialized Applications" to implement complex scenarios like CAPTCHA handling and framework integrations.
+
+**Prerequisites**: Each tutorial builds upon previous concepts. We recommend completing tutorials in the suggested order for the best learning experience.
