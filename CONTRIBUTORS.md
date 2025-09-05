@@ -8,10 +8,13 @@
 - bergjaak
 - dhawalkp
 - EashanKaushik
+- Grace Lang
 - khastation
 - manchandakp
+- Meghana Ashok
 - mttanke
 - mvangara10
+- ozhn
 - premaiy
 - rahullks
 - rameshv29
@@ -23,3 +26,5 @@
 - vedashreevinay
 - vgodwinamz
 - w601sxs
+- erezweinstein5
+- HardikThakkar94
