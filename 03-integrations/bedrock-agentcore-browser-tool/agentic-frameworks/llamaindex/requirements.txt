@@ -1,0 +1,44 @@
+# Core dependencies for LlamaIndex-AgentCore browser tool integration
+# Python 3.12 compatible versions
+
+# LlamaIndex framework - Python 3.12 compatible versions
+llama-index>=0.11.0
+llama-index-core>=0.11.0
+llama-index-llms-bedrock>=0.2.0
+llama-index-multi-modal-llms-bedrock>=0.2.0
+
+# AWS SDK and authentication - Python 3.12 compatible
+boto3>=1.35.0
+botocore>=1.35.0
+
+# HTTP client for AgentCore API calls - Python 3.12 compatible
+aiohttp>=3.10.0
+aiofiles>=24.1.0
+
+# Configuration and data handling - Python 3.12 compatible
+pydantic>=2.9.0
+pyyaml>=6.0.2
+
+# Async utilities - Python 3.12 compatible
+asyncio-throttle>=1.0.2
+
+# Image processing for CAPTCHA handling - Python 3.12 compatible
+pillow>=10.4.0
+
+# Logging and monitoring - Python 3.12 compatible
+structlog>=24.4.0
+
+# Testing dependencies (for development) - Python 3.12 compatible
+pytest>=8.3.0
+pytest-asyncio>=0.24.0
+pytest-mock>=3.14.0
+
+# Type checking - Python 3.12 compatible
+mypy>=1.11.0
+types-pyyaml>=6.0.12
+
+# Development tools - Python 3.12 compatible
+black>=24.8.0
+isort>=5.13.0
+flake8>=7.1.0
+ruff>=0.6.0  # Modern Python 3.12 compatible linter

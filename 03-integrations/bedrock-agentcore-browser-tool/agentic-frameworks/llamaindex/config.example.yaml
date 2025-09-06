@@ -1,0 +1,94 @@
+# Example configuration file for LlamaIndex-AgentCore browser tool integration
+# Copy this file to config.yaml and customize for your environment
+
+# AWS credentials and region configuration
+aws_credentials:
+  # AWS region where AgentCore services are deployed
+  region: us-east-1
+  
+  # Option 1: Use AWS profile (recommended for development)
+  profile: default
+  
+  # Option 2: Use explicit credentials (not recommended for production)
+  # access_key_id: your-access-key-id
+  # secret_access_key: your-secret-access-key
+  # session_token: your-session-token  # Optional, for temporary credentials
+
+# AgentCore service endpoints
+agentcore_endpoints:
+  # Base URL for AgentCore services (will auto-generate specific endpoints)
+  base_url: https://your-agentcore-endpoint.amazonaws.com
+  
+  # Or specify individual service endpoints
+  # browser_tool_endpoint: https://your-browser-tool-endpoint.amazonaws.com
+  # runtime_endpoint: https://your-runtime-endpoint.amazonaws.com
+  # memory_endpoint: https://your-memory-endpoint.amazonaws.com
+  # identity_endpoint: https://your-identity-endpoint.amazonaws.com
+  # gateway_endpoint: https://your-gateway-endpoint.amazonaws.com
+
+# Browser session configuration
+browser_config:
+  # Run browser in headless mode (no GUI)
+  headless: true
+  
+  # Browser viewport dimensions
+  viewport_width: 1920
+  viewport_height: 1080
+  
+  # Timeout settings (in seconds)
+  timeout_seconds: 30
+  page_load_timeout: 30
+  element_timeout: 10
+  
+  # Browser capabilities
+  enable_javascript: true
+  enable_images: true
+  enable_cookies: true
+  enable_local_storage: true
+  enable_session_storage: true
+  
+  # Optional: Custom user agent string
+  # user_agent: "Mozilla/5.0 (compatible; LlamaIndex-AgentCore/1.0)"
+  
+  # Optional: Proxy settings
+  # proxy_settings:
+  #   http: http://proxy.example.com:8080
+  #   https: https://proxy.example.com:8080
+  
+  # Optional: Additional browser arguments
+  # browser_args:
+  #   - "--disable-web-security"
+  #   - "--disable-features=VizDisplayCompositor"
+
+# Retry configuration for failed operations
+retry_config:
+  max_attempts: 3
+  base_delay: 1.0
+  max_delay: 60.0
+  exponential_base: 2.0
+  jitter: true
+  retryable_errors:
+    - timeout
+    - network_error
+    - rate_limited
+    - session_expired
+
+# Logging configuration
+logging_config:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  enable_debug: false
+  # log_file: /path/to/logfile.log  # Optional: log to file
+  log_agentcore_requests: true
+  log_agentcore_responses: false  # May contain sensitive data
+  max_log_size_mb: 100
+
+# LlamaIndex model configuration
+llm_model: anthropic.claude-3-sonnet-20240229-v1:0
+vision_model: anthropic.claude-3-sonnet-20240229-v1:0
+enable_multi_modal: true
+
+# Security and compliance settings
+enable_input_sanitization: true
+enable_pii_scrubbing: true
+audit_logging: true

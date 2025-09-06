@@ -225,5 +225,26 @@ pyrightconfig.json
 ### Zip file for prereq infa deployment
 lambda.zip
 
-### Kiro IDE files ###
+### IDE and Editor files ###
 .kiro/
+.vscode/
+.idea/
+
+### Credentials and sensitive files ###
+.env
+.env.local
+.env.production
+.env.staging
+config.local.yaml
+config.production.yaml
+**/credentials.json
+**/secrets.json
+**/aws-credentials
+**/.aws/credentials
+**/.aws/config
+
+### Local development files ###
+*.local
+*.dev
+*.development
+*.pyc
