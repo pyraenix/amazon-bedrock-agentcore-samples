@@ -42,30 +42,107 @@ The Amazon Bedrock AgentCore Browser Tool is suitable for a wide range of applic
 - Web Navigation & Interaction
 - Workflow Automation including filling forms
 
-## Tutorials overview
+## Tutorials Overview
 
-In these tutorials we will cover the following functionality:
+Our tutorials are organized by **agentic framework** to help you find all related content for your chosen framework in one place. Each framework directory contains comprehensive tutorials covering both basic browser automation and specialized applications like CAPTCHA handling and sensitive information management.
 
-### 🚀 Getting Started (Beginner Level)
-- [Getting Started with Bedrock AgentCore Browser Tool and NovaAct](01-browser-with-NovaAct/01_getting_started-agentcore-browser-tool-with-nova-act.ipynb)
-- [Getting Started with Bedrock AgentCore Browser Tool and Browser use](02-browser-with-browserUse/getting_started-agentcore-browser-tool-with-browser-use.ipynb)
+## Framework-Based Organization
 
-### 🔍 Advanced Features (Intermediate Level)
-- [Amazon Bedrock AgentCore Browser Tool Live View and Nova Act](01-browser-with-NovaAct/02_agentcore-browser-tool-live-view-with-nova-act.ipynb)
-- [Amazon Bedrock AgentCore Browser Tool Live View and Browser Use](02-browser-with-browserUse/agentcore-browser-tool-live-view-with-browser-use.ipynb)
+### 🤖 [NovaAct Framework](01-browser-with-NovaAct/)
+**Best for**: Beginners and rapid prototyping
 
-### 🤖 Specialized Applications (Advanced Level)
-- [Browser Tool with Strands Integration](03-browser-tool-with-strands/README.md)
-- [CAPTCHA Handling with Strands Agents](04-captcha-handling-tutorials/strands/README.md) - **FEATURED!** Enterprise-grade CAPTCHA handling with intelligent orchestration
-- [CAPTCHA Handling with Browser-use](04-captcha-handling-tutorials/browser-use/README.md) - AI-powered CAPTCHA detection and solving
-- [CAPTCHA Handling with LlamaIndex](04-captcha-handling-tutorials/llamaindex/README.md) - Comprehensive LlamaIndex integration for intelligent CAPTCHA handling
+- **Getting Started**: [Basic browser automation with NovaAct](01-browser-with-NovaAct/01_getting_started-agentcore-browser-tool-with-nova-act.ipynb)
+- **Live View**: [Interactive browser sessions](01-browser-with-NovaAct/02_agentcore-browser-tool-live-view-with-nova-act.ipynb)
+- **Sensitive Information**: [Secure data handling patterns](01-browser-with-NovaAct/handling-sensitive-information/)
 
-### 📚 Recommended Learning Path
+### 🌐 [Browser-use Framework](02-browser-with-browserUse/)
+**Best for**: AI-powered browser automation
 
-**For Beginners**: Start with the "Getting Started" tutorials to understand basic browser automation concepts, then progress to advanced features.
+- **Getting Started**: [Browser automation with Browser-use](02-browser-with-browserUse/getting_started-agentcore-browser-tool-with-browser-use.ipynb)
+- **Live View**: [Interactive browser sessions](02-browser-with-browserUse/agentcore-browser-tool-live-view-with-browser-use.ipynb)
+- **CAPTCHA Handling**: [AI-powered CAPTCHA detection and solving](02-browser-with-browserUse/captcha-handling/)
+- **Sensitive Information**: [Secure data handling patterns](02-browser-with-browserUse/handling-sensitive-information/)
 
-**For Intermediate Users**: If you're familiar with browser automation, jump to the "Advanced Features" section and explore live view capabilities.
+### 🔗 [Strands Framework](03-browser-with-Strands/)
+**Best for**: Enterprise orchestration and complex workflows
 
-**For Advanced Users**: Focus on "Specialized Applications" to implement complex scenarios like CAPTCHA handling and framework integrations.
+- **CAPTCHA Handling**: [Enterprise-grade CAPTCHA handling with intelligent orchestration](03-browser-with-Strands/captcha-handling/) - **FEATURED!**
+- **Sensitive Information**: [Enterprise security and compliance patterns](03-browser-with-Strands/handling-sensitive-information/)
 
-**Prerequisites**: Each tutorial builds upon previous concepts. We recommend completing tutorials in the suggested order for the best learning experience.
+### 📚 [LlamaIndex Framework](04-browser-with-LlamaIndex/)
+**Best for**: RAG-enhanced browser automation and knowledge management
+
+- **CAPTCHA Handling**: [RAG-powered CAPTCHA analysis and solving](04-browser-with-LlamaIndex/captcha-handling/)
+- **Sensitive Information**: [Privacy-preserving data processing](04-browser-with-LlamaIndex/handling-sensitive-information/)
+
+## Learning Paths
+
+### 🚀 **Beginner Path** (Start Here)
+1. Choose your preferred framework (NovaAct recommended for beginners)
+2. Complete the "Getting Started" tutorial for your chosen framework
+3. Explore "Live View" capabilities to understand interactive browser sessions
+4. Try basic examples in specialized applications (CAPTCHA or sensitive information)
+
+### 🔍 **Intermediate Path**
+1. Complete tutorials for 2-3 different frameworks to understand their strengths
+2. Explore advanced features in specialized applications
+3. Implement custom solutions combining multiple frameworks
+4. Focus on production-ready patterns and error handling
+
+### 🤖 **Advanced Path**
+1. Master all framework integrations and their unique capabilities
+2. Build complex multi-step workflows with enterprise security
+3. Implement custom tools and extensions for specific use cases
+4. Deploy production systems with comprehensive monitoring
+
+## Framework Comparison
+
+| Framework | Best For | Complexity | Key Strengths |
+|-----------|----------|------------|---------------|
+| **NovaAct** | Beginners, Rapid Prototyping | Low | Simple API, Quick setup |
+| **Browser-use** | AI-Powered Automation | Medium | Intelligent automation, Visual understanding |
+| **Strands** | Enterprise Workflows | High | Orchestration, Error handling, Scalability |
+| **LlamaIndex** | Knowledge Management | High | RAG capabilities, Multi-modal processing |
+
+## Specialized Applications
+
+### 🛡️ **CAPTCHA Handling**
+Available in: Browser-use, Strands, LlamaIndex
+- Multi-strategy CAPTCHA detection and solving
+- AI-powered visual analysis using Bedrock models
+- Enterprise-grade security and compliance
+- Adaptive learning from solving experiences
+
+### 🔐 **Sensitive Information Handling**
+Available in: NovaAct, Browser-use, Strands, LlamaIndex
+- Secure form filling with data protection
+- Enterprise authentication workflows
+- Privacy-preserving data processing
+- Audit trails and compliance logging
+
+## Prerequisites
+
+Before starting any tutorial, ensure you have:
+
+1. **AWS Account Setup**:
+   - Access to Amazon Bedrock with appropriate model permissions
+   - AgentCore Browser Tool service access
+   - Proper IAM roles and policies configured
+
+2. **Development Environment**:
+   - Python 3.9+ with virtual environment capabilities
+   - AWS CLI configured with appropriate permissions
+   - Jupyter Notebook for interactive tutorials
+
+3. **Framework Knowledge** (varies by chosen framework):
+   - Basic understanding of your chosen agentic framework
+   - Familiarity with AWS Bedrock models
+   - Experience with Python and async programming
+
+## Getting Started
+
+1. **Choose Your Framework**: Review the framework comparison table above
+2. **Set Up Prerequisites**: Ensure your AWS account and development environment are ready
+3. **Start Learning**: Navigate to your chosen framework directory and begin with the README
+4. **Progress Systematically**: Follow the recommended learning path for your experience level
+5. **Explore Specializations**: Once comfortable with basics, explore CAPTCHA handling or sensitive information tutorials

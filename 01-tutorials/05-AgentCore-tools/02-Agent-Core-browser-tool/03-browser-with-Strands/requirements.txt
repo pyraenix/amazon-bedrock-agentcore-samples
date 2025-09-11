@@ -1,0 +1,35 @@
+# Strands Framework Requirements
+# IMPORTANT: Requires Python >=3.10
+# Core Strands dependencies
+strands-agents>=0.1.8
+strands-agents-tools>=0.1.6
+
+# AgentCore and AWS dependencies
+bedrock-agentcore
+boto3>=1.35.0
+botocore>=1.35.0
+
+# Web framework dependencies
+fastapi>=0.109.0
+uvicorn>=0.27.0
+
+# Utility dependencies
+uv
+rich
+pydantic>=2.9.0
+pyyaml>=6.0.2
+
+# HTTP and async dependencies
+aiohttp>=3.10.0
+aiofiles>=24.1.0
+requests>=2.32.0
+
+# Image processing for captcha handling
+pillow>=10.4.0
+
+# Logging
+structlog>=24.4.0
+
+# Development and testing
+pytest>=8.3.0
+pytest-asyncio>=0.24.0

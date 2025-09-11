@@ -230,6 +230,9 @@ lambda.zip
 .vscode/
 .idea/
 
+### Test cache files ###
+.pytest_cache/
+
 ### Credentials and sensitive files ###
 .env
 .env.local
@@ -248,3 +251,6 @@ config.production.yaml
 *.dev
 *.development
 *.pyc
+
+### Local testing framework (not for main repo) ###
+tutorial_validation_framework/
